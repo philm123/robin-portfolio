@@ -6,6 +6,8 @@ const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, 'dist');
 const c = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/site.json'), 'utf8'));
 const SITE_URL = (process.env.URL || 'https://robin-hoffman.netlify.app').replace(/\/$/, '');
+// Netlify sets CONTEXT. Anything that isn't the live site (draft branch, previews) stays out of search.
+const NOINDEX = Boolean(process.env.CONTEXT) && process.env.CONTEXT !== 'production';
 
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const list = a => (Array.isArray(a) ? a : []).filter(x => x !== null && x !== undefined && x !== '');
@@ -25,6 +27,7 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(c.seo?.title)}</title>
 <meta name="description" content="${esc(c.seo?.description)}">
+${NOINDEX ? '<meta name="robots" content="noindex">' : ''}
 <link rel="canonical" href="${SITE_URL}/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE_URL}/">
@@ -183,6 +186,7 @@ fs.rmSync(OUT, { recursive: true, force: true });
 fs.cpSync(path.join(ROOT, 'src'), OUT, { recursive: true });
 if (fs.existsSync(path.join(ROOT, 'media'))) fs.cpSync(path.join(ROOT, 'media'), path.join(OUT, 'media'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'index.html'), html);
+if (NOINDEX) fs.writeFileSync(path.join(OUT, '_headers'), '/*\n  X-Robots-Tag: noindex\n');
 if (resume && !resume.startsWith('http') && !fs.existsSync(path.join(OUT, resume))) {
   console.error(`Resume file not found: ${resume}. Upload it in the editor or fix the path.`);
   process.exit(1);
