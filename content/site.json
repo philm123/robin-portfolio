@@ -1,0 +1,167 @@
+{
+  "seo": {
+    "title": "Robin J. Hoffman | Agile delivery and technical program leader",
+    "description": "Senior Agile delivery and technical program leader. Complex programs and enterprise releases, delivered calmly by teams safe enough to speak up early."
+  },
+  "hero": {
+    "eyebrow": "Robin J. Hoffman · Agile delivery · Technical program management",
+    "headline": "I untangle complex delivery.",
+    "intro": "Senior delivery and program leader. Disciplined execution, with teams safe enough to speak up early.",
+    "captions": [
+      "Many teams. Many dependencies.",
+      "Surfaced early. Owned together.",
+      "One clean line to production."
+    ]
+  },
+  "highlights": {
+    "kicker": "Career highlights",
+    "items": [
+      {
+        "value": "18",
+        "label": "IAM production releases coordinated for the State of Colorado, holding a 6 to 8 week cadence"
+      },
+      {
+        "value": "10 to 12",
+        "label": "production releases a month on a high availability payments platform"
+      },
+      {
+        "value": "$13M + $3M",
+        "label": "saved each year by bringing frontend processor and backend settlement integrations in house"
+      },
+      {
+        "value": "179 to 6,000",
+        "label": "servers in a Splunk audit backlog she kept organized as scope grew"
+      }
+    ]
+  },
+  "roles": {
+    "kicker": "Where I lead",
+    "heading": "Delivery leadership across the whole program, not just the team.",
+    "items": [
+      "Senior Agile delivery leadership",
+      "Senior Technical Program Management",
+      "Senior and Principal Delivery or Program Management",
+      "Enterprise Agile coaching and transformation",
+      "Cross-functional technology delivery leadership"
+    ]
+  },
+  "experience": {
+    "kicker": "17 years of Agile delivery",
+    "heading": "Seventeen years of getting hard things shipped.",
+    "jobs": [
+      {
+        "years": "2023 to 2026",
+        "company": "State of Colorado, Governor’s Office of Information Technology",
+        "title": "Senior Scrum Master, contractor",
+        "summary": "Led Agile delivery for statewide Identity and Access Management across state and county agencies, technical teams and NTT DATA.",
+        "bullets": [
+          "Coordinated about 18 IAM production releases, sustaining the Product Owner’s 6 to 8 week cadence.",
+          "Built sprint pre-planning, story readiness and SME review. Earlier discovery of agency configurations eliminated corrective interim releases.",
+          "Ran security, audit and Splunk logging remediation as scope grew from 179 to nearly 6,000 servers."
+        ]
+      },
+      {
+        "years": "2023",
+        "company": "Xcel Energy",
+        "title": "Senior Scrum Master, contractor",
+        "summary": "Customer account management web and mobile apps, focused on customer experience, service efficiency and cost savings.",
+        "bullets": [
+          "Raised team velocity 16% and Agile team maturity 11% through coaching and continuous improvement.",
+          "Led the integration with a paperless billing vendor to cut costs.",
+          "Advocated for accessibility so users of all abilities could reach their goals."
+        ]
+      },
+      {
+        "years": "2021 to 2022",
+        "company": "Nutrien Digital",
+        "title": "Senior Scrum Master",
+        "summary": "Scrum Master for the Employee Ordering App, which grew from $259M to over $2B in annual revenue within its first three years.",
+        "bullets": [
+          "Built trust and psychological safety across cross-functional stakeholders.",
+          "Reported delivery metrics to leadership through a digital transformation.",
+          "Reinvented retrospectives across multiple teams to keep them improving."
+        ]
+      },
+      {
+        "years": "2009 to 2021",
+        "company": "Worldpay / Mercury Payment Systems",
+        "title": "Senior Scrum Master, Senior Project Manager, Program Manager",
+        "summary": "Twelve years leading delivery on a high availability payments platform: processor integrations, card brand mandates, security and production support.",
+        "bullets": [
+          "Coordinated 10 to 12 production releases a month and more than 100 initiatives across distributed teams.",
+          "Led frontend processor integrations saving about $13M a year and backend settlement integrations saving about $3M a year.",
+          "Introduced a five week PI Planning prep approach and coached multiple Release Train Engineers. Offered the formal RTE role.",
+          "Took part in cryptographic key ceremonies for secure debit key administration."
+        ]
+      }
+    ]
+  },
+  "principles": {
+    "kicker": "How I work",
+    "heading": "Calm is a delivery practice.",
+    "items": [
+      {
+        "title": "Find the risk before it finds us",
+        "body": "Pre-planning, story readiness and SME review bring requirements and dependencies into the open while they’re still cheap to fix."
+      },
+      {
+        "title": "Every voice in the room",
+        "body": "Psychological safety isn’t soft. It’s how a team hears about the problem in week two instead of release night."
+      },
+      {
+        "title": "Escalate with care",
+        "body": "Clear executive updates, honest risk calls and priorities aligned before they collide. No surprises upstairs."
+      },
+      {
+        "title": "Coach the coaches",
+        "body": "I coach Scrum Masters, Product Owners and Release Train Engineers, and leave reusable practices behind so the team keeps going after I step back."
+      }
+    ]
+  },
+  "testimonials": {
+    "kicker": "What colleagues say",
+    "more_link": "https://www.linkedin.com/in/robin-hoffman-csp-sm-csp-po-/details/recommendations/",
+    "items": [
+      {
+        "show": true,
+        "quote": "Robin is the person who makes a hard program feel calm. She gets agencies, vendors and engineers talking early, and she makes sure every voice is heard. I’d work with her again in a heartbeat.",
+        "name": "Phil Morehead",
+        "role": "CTO",
+        "relationship": "former colleague"
+      }
+    ]
+  },
+  "credentials": {
+    "certifications": [
+      "CSP-SM",
+      "CSP-PO",
+      "CSM",
+      "CSPO",
+      "Certified Agile Leader 1"
+    ],
+    "certifications_note": "Scrum Alliance certifications current through April 2028. Leading SAFe 4.0, SAFe 4.5 Agilist and SAFe Advanced Scrum Master 4.5 held previously.",
+    "training": [
+      "Full Spectrum Leadership"
+    ],
+    "tools": [
+      "Azure DevOps",
+      "Jira",
+      "Jira Align",
+      "Confluence",
+      "Rally",
+      "TFS",
+      "ServiceNow",
+      "SharePoint",
+      "Microsoft Office",
+      "Google Workspace"
+    ]
+  },
+  "contact": {
+    "heading": "Got a program that needs untangling?",
+    "body": "Based in Colorado and open to remote and select Front Range hybrid opportunities in senior Agile delivery leadership, Technical Program Management, and cross-functional technology program delivery.",
+    "email": "RobinJHoffman1@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/robin-hoffman-csp-sm-csp-po-/",
+    "resume": "/media/Robin_Hoffman_Resume.pdf",
+    "location": "Highlands Ranch, Colorado"
+  }
+}

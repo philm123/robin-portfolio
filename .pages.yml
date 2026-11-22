@@ -1,0 +1,130 @@
+media:
+  input: media
+  output: /media
+  categories: [document, image]
+
+content:
+  - name: site
+    label: Website content
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: hero
+        label: Top of page
+        type: object
+        fields:
+          - { name: eyebrow, label: Small line above the headline, type: string }
+          - { name: headline, label: Headline, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: captions
+            label: Scroll captions (three short lines)
+            type: string
+            list: { min: 3, max: 3 }
+
+      - name: highlights
+        label: Career highlights (numbers)
+        type: object
+        fields:
+          - { name: kicker, label: Section label, type: string }
+          - name: items
+            label: Highlights
+            type: object
+            list:
+              min: 1
+              max: 6
+              collapsible: { collapsed: true, summary: "{value}" }
+            fields:
+              - { name: value, label: Number, type: string }
+              - { name: label, label: What it means, type: text }
+
+      - name: roles
+        label: Target roles
+        type: object
+        fields:
+          - { name: kicker, label: Section label, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: items, label: Roles, type: string, list: true }
+
+      - name: experience
+        label: Experience
+        type: object
+        fields:
+          - { name: kicker, label: Section label, type: string }
+          - { name: heading, label: Heading, type: string }
+          - name: jobs
+            label: Jobs (newest first)
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{company}" }
+            fields:
+              - { name: years, label: Years, type: string }
+              - { name: company, label: Organization, type: string }
+              - { name: title, label: Title, type: string }
+              - { name: summary, label: One line summary, type: text }
+              - { name: bullets, label: Accomplishments, type: text, list: true }
+
+      - name: principles
+        label: How I work
+        type: object
+        fields:
+          - { name: kicker, label: Section label, type: string }
+          - { name: heading, label: Heading, type: string }
+          - name: items
+            label: Principles
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{title}" }
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: body, label: Text, type: text }
+
+      - name: testimonials
+        label: Recommendations
+        type: object
+        fields:
+          - { name: kicker, label: Section label, type: string }
+          - { name: more_link, label: Link to all recommendations on LinkedIn, type: string }
+          - name: items
+            label: Recommendations (the first three shown appear on the site)
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{name}" }
+            fields:
+              - { name: show, label: Show on the site, type: boolean, default: true }
+              - { name: quote, label: Quote, type: text }
+              - { name: name, label: Name, type: string }
+              - { name: role, label: Their role, type: string }
+              - { name: relationship, label: How they know you, type: string }
+
+      - name: credentials
+        label: Certifications, training and tools
+        type: object
+        fields:
+          - { name: certifications, label: Certifications, type: string, list: true }
+          - { name: certifications_note, label: Certification note, type: text }
+          - { name: training, label: Training and professional development, type: string, list: true }
+          - { name: tools, label: Tools, type: string, list: true }
+
+      - name: contact
+        label: Contact and resume
+        type: object
+        fields:
+          - { name: heading, label: Heading, type: string }
+          - { name: body, label: Closing line, type: text }
+          - { name: email, label: Email, type: string }
+          - { name: linkedin, label: LinkedIn URL, type: string }
+          - name: resume
+            label: Resume PDF (upload a new one to replace it)
+            type: file
+            options:
+              extensions: [pdf]
+              rename: false
+          - { name: location, label: Location, type: string }
+
+      - name: seo
+        label: Search and sharing
+        type: object
+        fields:
+          - { name: title, label: Browser tab title, type: string }
+          - { name: description, label: Search description (under 160 characters), type: text }
